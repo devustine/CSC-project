@@ -1,62 +1,4 @@
-/* ============================================
-   Responsive Styles - Media Queries
-   ============================================ */
 
-/* Tablet and below (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .products-page-wrapper {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .products-filters {
-        position: static;
-        order: 2;
-    }
-
-    .products-content {
-        order: 1;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .products-grid,
-    .events-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-story-content,
-    .product-details-wrapper,
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .product-details-images {
-        position: static;
-    }
-
-    .appointment-booking-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .appointment-calendar-preview {
-        position: static;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
     .navbar .container{
         width: 100%;
@@ -97,7 +39,8 @@
 
     .products-grid,
     .events-grid,
-    .cta-features {
+    .cta-features,
+    .about-team-grid {
         grid-template-columns: 1fr;
     }
 
