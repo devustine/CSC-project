@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Fashion Store</title>
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/responsive.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="/assets/script.js"></script>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <marquee class="marquee-text">
+                    <span>Special Offer: 50% Off on all products | Free Shipping | 100% Satisfaction Guarantee</span>
+                </marquee>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="container">
+                <nav>
+                    <div class="navbar-logo">
+                        <img src="/assets/img/logo.png" alt="logo">
+                    </div>
+                    <div class="navbar-menu">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html#products">Products</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/events.html">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-actions">
+                        <div class="navbar-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="navbar-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <div class="navbar-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- products hero section start -->
+    <section class="hero">
+        <div class="container h-100">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1 class="hero-title">Our Products</h1>
+                    <p class="hero-description">Discover our stunning collection of luxury evening dresses,
+                        perfect for any special occasion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products hero section end -->
+
+    <!-- products section start -->
+    <section class="product-section">
+        <div class="container">
+            <div class="products-page-wrapper">
+                <!-- Filters Sidebar -->
+                <aside class="products-filters">
+                    <div class="filters-header">
+                        <h3>Filters</h3>
+                        <button class="filter-clear-btn">Clear All</button>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Category</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="all" checked>
+                                <span>All Products</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="evening">
+                                <span>Evening Dresses</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="cocktail">
+                                <span>Cocktail Dresses</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="formal">
+                                <span>Formal Wear</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="prom">
+                                <span>Prom Dresses</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Price Range</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="radio" name="price" value="all" checked>
+                                <span>All Prices</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="price" value="0-200">
+                                <span>$0 - $200</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="price" value="200-300">
+                                <span>$200 - $300</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="price" value="300-400">
+                                <span>$300 - $400</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="price" value="400+">
+                                <span>$400+</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Size Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Size</h4>
+                        <div class="filter-size-options">
+                            <button class="filter-size-btn">XS</button>
+                            <button class="filter-size-btn">S</button>
+                            <button class="filter-size-btn">M</button>
+                            <button class="filter-size-btn">L</button>
+                            <button class="filter-size-btn">XL</button>
+                        </div>
+                    </div>
+
+                    <!-- Color Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Color</h4>
+                        <div class="filter-color-options">
+                            <button class="filter-color-btn active" style="background-color: #000;"></button>
+                            <button class="filter-color-btn" style="background-color: #8B4513;"></button>
+                            <button class="filter-color-btn" style="background-color: #800080;"></button>
+                            <button class="filter-color-btn" style="background-color: #000080;"></button>
+                            <button class="filter-color-btn" style="background-color: #FF1493;"></button>
+                            <button class="filter-color-btn" style="background-color: #FFD700;"></button>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Content -->
+                <div class="products-content">
+                    <!-- Sort and View Options -->
+                    <div class="products-toolbar">
+                        <div class="products-count">
+                            <span id="productsCount">12</span> Products Found
+                        </div>
+                        <div class="products-sort">
+                            <label>Sort by:</label>
+                            <select id="sortSelect" class="sort-select">
+                                <option value="default">Default</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-asc">Name: A to Z</option>
+                                <option value="name-desc">Name: Z to A</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product 1 -->
+                        <div class="product-card" data-category="evening" data-price="299.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Elegant Evening Gown"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Elegant Evening Gown</a></h3>
+                                <p class="product-category">Evening Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$299.99</span>
+                                    <span class="product-price-old">$399.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card" data-category="cocktail" data-price="249.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Classic Cocktail Dress"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Classic Cocktail Dress</a></h3>
+                                <p class="product-category">Cocktail Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$249.99</span>
+                                    <span class="product-price-old">$349.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card" data-category="formal" data-price="329.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Formal Evening Dress"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Formal Evening Dress</a></h3>
+                                <p class="product-category">Formal Wear</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$329.99</span>
+                                    <span class="product-price-old">$429.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card" data-category="evening" data-price="279.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Luxury Evening Gown" class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Luxury Evening Gown</a></h3>
+                                <p class="product-category">Evening Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$279.99</span>
+                                    <span class="product-price-old">$379.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card" data-category="prom" data-price="349.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Elegant Prom Dress" class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Elegant Prom Dress</a></h3>
+                                <p class="product-category">Prom Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$349.99</span>
+                                    <span class="product-price-old">$449.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card" data-category="cocktail" data-price="229.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Modern Cocktail Dress"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Modern Cocktail Dress</a></h3>
+                                <p class="product-category">Cocktail Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$229.99</span>
+                                    <span class="product-price-old">$329.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product-card" data-category="evening" data-price="399.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Designer Evening Gown"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Designer Evening Gown</a></h3>
+                                <p class="product-category">Evening Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$399.99</span>
+                                    <span class="product-price-old">$499.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product-card" data-category="formal" data-price="369.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Classic Formal Dress"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Classic Formal Dress</a></h3>
+                                <p class="product-category">Formal Wear</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$369.99</span>
+                                    <span class="product-price-old">$469.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product-card" data-category="prom" data-price="319.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Stylish Prom Dress" class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Stylish Prom Dress</a></h3>
+                                <p class="product-category">Prom Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$319.99</span>
+                                    <span class="product-price-old">$419.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 -->
+                        <div class="product-card" data-category="evening" data-price="259.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Vintage Evening Gown"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Vintage Evening Gown</a></h3>
+                                <p class="product-category">Evening Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$259.99</span>
+                                    <span class="product-price-old">$359.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 11 -->
+                        <div class="product-card" data-category="cocktail" data-price="239.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Elegant Cocktail Dress"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Elegant Cocktail Dress</a></h3>
+                                <p class="product-category">Cocktail Dresses</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$239.99</span>
+                                    <span class="product-price-old">$339.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 12 -->
+                        <div class="product-card" data-category="formal" data-price="389.99">
+                            <div class="product-image-wrapper">
+                                <a href="/product-details.html">
+                                    <img src="/assets/img/hero-img.jpg" alt="Premium Formal Dress"
+                                        class="product-image">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="/product-details.html"
+                                        style="text-decoration: none; color: inherit;">Premium Formal Dress</a></h3>
+                                <p class="product-category">Formal Wear</p>
+                                <div class="product-price-wrapper">
+                                    <span class="product-price">$389.99</span>
+                                    <span class="product-price-old">$489.99</span>
+                                </div>
+                                <button class="btn btn-product">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="products-pagination">
+                        <button class="pagination-btn">
+                            <i class="fa-solid fa-chevron-left"></i> Previous
+                        </button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-number active">1</button>
+                            <button class="pagination-number">2</button>
+                            <button class="pagination-number">3</button>
+                        </div>
+                        <button class="pagination-btn">
+                            Next <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products section end -->
+
+    <!-- footer start -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/assets/img/logo.png" alt="Logo">
+                    </div>
+                    <p class="footer-description">Your premier destination for luxury evening dresses. Discover timeless
+                        elegance and contemporary style in every piece.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/products.html">Products</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Fashion Street, New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@fashionstore.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Mon-Fri: 9AM - 6PM EST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

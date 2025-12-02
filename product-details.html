@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Fashion Store</title>
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/responsive.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="/assets/script.js"></script>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <marquee class="marquee-text">
+                    <span>Special Offer: 50% Off on all products | Free Shipping | 100% Satisfaction Guarantee</span>
+                </marquee>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="container">
+                <nav>
+                    <div class="navbar-logo">
+                        <img src="/assets/img/logo.png" alt="logo">
+                    </div>
+                    <div class="navbar-menu">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/products.html">Products</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/events.html">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-actions">
+                        <div class="navbar-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="navbar-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- product details section start -->
+    <section class="product-details-section">
+        <div class="container">
+            <div class="product-details-wrapper">
+                <div class="product-details-images">
+                    <div class="product-details-main-image">
+                        <img src="/assets/img/hero-img.jpg" alt="Product Image" id="mainProductImage">
+                    </div>
+                    <div class="product-details-thumbnails">
+                        <div class="product-thumbnail active">
+                            <img src="/assets/img/hero-img.jpg" alt="Thumbnail 1">
+                        </div>
+                        <div class="product-thumbnail">
+                            <img src="/assets/img/hero-img.jpg" alt="Thumbnail 2">
+                        </div>
+                        <div class="product-thumbnail">
+                            <img src="/assets/img/hero-img.jpg" alt="Thumbnail 3">
+                        </div>
+                        <div class="product-thumbnail">
+                            <img src="/assets/img/hero-img.jpg" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details-info">
+                    <h1 class="product-details-title">Elegant Evening Gown</h1>
+                    <p class="product-details-category">Evening Dresses</p>
+
+                    <div class="product-details-price-wrapper">
+                        <span class="product-details-price">$299.99</span>
+                        <span class="product-details-price-old">$399.99</span>
+                        <span class="product-details-discount">25% OFF</span>
+                    </div>
+
+                    <div class="product-details-rating">
+                        <div class="product-rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="product-rating-text">(4.5) 128 Reviews</span>
+                    </div>
+
+                    <p class="product-details-description">
+                        This stunning evening gown features a flowing silhouette with elegant draping and intricate
+                        detailing. Made from premium quality fabric, it offers both comfort and sophistication. Perfect
+                        for formal events, galas, and special occasions.
+                    </p>
+
+                    <div class="product-details-options">
+                        <div class="product-option-group">
+                            <label>Size:</label>
+                            <div class="product-size-options">
+                                <button class="product-size-btn">XS</button>
+                                <button class="product-size-btn active">S</button>
+                                <button class="product-size-btn">M</button>
+                                <button class="product-size-btn">L</button>
+                                <button class="product-size-btn">XL</button>
+                            </div>
+                        </div>
+
+                        <div class="product-option-group">
+                            <label>Color:</label>
+                            <div class="product-color-options">
+                                <button class="product-color-btn active" style="background-color: #000;"></button>
+                                <button class="product-color-btn" style="background-color: #8B4513;"></button>
+                                <button class="product-color-btn" style="background-color: #800080;"></button>
+                                <button class="product-color-btn" style="background-color: #000080;"></button>
+                            </div>
+                        </div>
+
+                        <div class="product-option-group">
+                            <label>Quantity:</label>
+                            <div class="product-quantity-controls">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details-actions">
+                        <button class="btn btn-product" style="width: 100%; margin-bottom: 15px;">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-cta-secondary" style="width: 100%;">
+                            <i class="fa-solid fa-heart"></i> Add to Wishlist
+                        </button>
+                    </div>
+
+                    <div class="product-details-features">
+                        <div class="product-feature-item">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <span>Free Shipping on orders over $200</span>
+                        </div>
+                        <div class="product-feature-item">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <span>30-day return policy</span>
+                        </div>
+                        <div class="product-feature-item">
+                            <i class="fa-solid fa-shield"></i>
+                            <span>Secure payment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product details section end -->
+
+    <!-- product specifications section start -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-specs-tabs">
+                <button class="spec-tab active" data-tab="description">Description</button>
+                <button class="spec-tab" data-tab="specifications">Specifications</button>
+                <button class="spec-tab" data-tab="reviews">Reviews</button>
+            </div>
+
+            <div class="product-specs-content">
+                <div id="description" class="spec-content active">
+                    <h3>Product Description</h3>
+                    <p>This elegant evening gown is designed to make you feel like royalty. The flowing fabric creates a
+                        graceful silhouette that flatters every body type. The intricate detailing and premium
+                        craftsmanship ensure that you'll stand out at any event.</p>
+                    <p>Made from high-quality materials, this dress is both comfortable and durable. The design features
+                        elegant draping, a flattering neckline, and a beautiful hemline that flows with your every
+                        movement.</p>
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Premium quality fabric</li>
+                        <li>Elegant draping and detailing</li>
+                        <li>Comfortable fit for all-day wear</li>
+                        <li>Easy care instructions</li>
+                        <li>Available in multiple sizes and colors</li>
+                    </ul>
+                </div>
+
+                <div id="specifications" class="spec-content">
+                    <h3>Product Specifications</h3>
+                    <table class="product-specs-table">
+                        <tr>
+                            <td>Material</td>
+                            <td>Premium Polyester Blend</td>
+                        </tr>
+                        <tr>
+                            <td>Care Instructions</td>
+                            <td>Dry Clean Only</td>
+                        </tr>
+                        <tr>
+                            <td>Length</td>
+                            <td>Floor Length</td>
+                        </tr>
+                        <tr>
+                            <td>Neckline</td>
+                            <td>V-Neck</td>
+                        </tr>
+                        <tr>
+                            <td>Sleeve Style</td>
+                            <td>Sleeveless</td>
+                        </tr>
+                        <tr>
+                            <td>Available Sizes</td>
+                            <td>XS, S, M, L, XL</td>
+                        </tr>
+                        <tr>
+                            <td>Available Colors</td>
+                            <td>Black, Brown, Purple, Navy Blue</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="reviews" class="spec-content">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="review-author">Sarah M.</span>
+                        </div>
+                        <p class="review-text">Absolutely stunning dress! The quality is exceptional and it fits
+                            perfectly. I received so many compliments at the event.</p>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <span class="review-author">Jennifer L.</span>
+                        </div>
+                        <p class="review-text">Beautiful dress, great quality. The shipping was fast and the packaging
+                            was excellent. Highly recommend!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product specifications section end -->
+
+    <!-- related products section start -->
+    <section class="product-section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="product-header">
+                <h2 class="product-title">You May Also Like</h2>
+                <p class="product-description">Discover more stunning pieces from our collection</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="/assets/img/hero-img.jpg" alt="Product 1" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Evening Dress</h3>
+                        <p class="product-category">Evening Dresses</p>
+                        <div class="product-price-wrapper">
+                            <span class="product-price">$249.99</span>
+                            <span class="product-price-old">$349.99</span>
+                        </div>
+                        <button class="btn btn-product">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="/assets/img/hero-img.jpg" alt="Product 2" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Modern Gown</h3>
+                        <p class="product-category">Evening Dresses</p>
+                        <div class="product-price-wrapper">
+                            <span class="product-price">$279.99</span>
+                            <span class="product-price-old">$379.99</span>
+                        </div>
+                        <button class="btn btn-product">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="/assets/img/hero-img.jpg" alt="Product 3" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Elegant Ball Gown</h3>
+                        <p class="product-category">Evening Dresses</p>
+                        <div class="product-price-wrapper">
+                            <span class="product-price">$329.99</span>
+                            <span class="product-price-old">$429.99</span>
+                        </div>
+                        <button class="btn btn-product">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- related products section end -->
+
+    <!-- footer start -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/assets/img/logo.png" alt="Logo">
+                    </div>
+                    <p class="footer-description">Your premier destination for luxury evening dresses. Discover timeless
+                        elegance and contemporary style in every piece.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/index.html#products">Products</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Fashion Street, New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@fashionstore.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Mon-Fri: 9AM - 6PM EST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
