@@ -40,8 +40,16 @@
     .products-grid,
     .events-grid,
     .cta-features,
-    .about-team-grid {
+    .about-team-grid,
+    .about-story-content,
+    .appointment-booking-wrapper,
+    .contact-wrapper,
+    .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .appointment-form {
+        width: 100%;
     }
 
     .hero-title {

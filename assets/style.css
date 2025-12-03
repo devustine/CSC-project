@@ -33,6 +33,11 @@
     width: 95%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .top-header {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     padding: 10px 0;
@@ -1490,6 +1495,7 @@ nav {
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-top: 40px;
+    width: 100%;
 }
 
 .appointment-form {
