@@ -44,8 +44,14 @@
     .about-story-content,
     .appointment-booking-wrapper,
     .contact-wrapper,
-    .form-row {
+    .form-row,
+    .product-details-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .product-details-images {
+        position: relative;
+        top: 0;
     }
 
     .appointment-form {
