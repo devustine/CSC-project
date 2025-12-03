@@ -2,14 +2,14 @@
 
 /* Color Variables */
 :root {
-    --primary-color: #8B4C9F;
-    --primary-dark: #6B3A7A;
-    --primary-light: #B87BC8;
-    --accent-color: #D4AF37;
-    --accent-light: #F4E4BC;
-    --secondary-color: #E8B4CB;
-    --secondary-dark: #C98AA8;
-    --tertiary-color: #A8D5E2;
+    --primary-color: #5d3dd2;
+    --primary-dark: #4a33a8;
+    --primary-light: #6b47d4;
+    --accent-color: #d4af37;
+    --accent-light: #f4e4bc;
+    --secondary-color: #e8b4cb;
+    --secondary-dark: #c98aa8;
+    --tertiary-color: #a8d5e2;
     --text-dark: #2C2C2C; 
     --text-white: #FFFFFF;
     --text-light: #666666;
@@ -141,7 +141,7 @@ nav {
 .hero {
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(135deg, rgba(139, 76, 159, 0.7) 0%, rgba(107, 58, 122, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%), url(/assets/img/miracle-hero-img.jpg);
+    background-image: linear-gradient(135deg, rgba(93, 61, 210, 0.7) 0%, rgba(74, 51, 168, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%), url(/assets/img/miracle-hero-img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
