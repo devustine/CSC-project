@@ -54,6 +54,10 @@
         top: 0;
     }
 
+    .product-specs-tabs {
+        flex-wrap: wrap;
+    }
+
     .appointment-form {
         width: 100%;
     }
